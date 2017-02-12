@@ -1,13 +1,11 @@
-html{
-  height: 100%;
-}
 
 body {
-  height: 100%;
+  overflow: hidden;
 }
 
 .mainContainer {
-  height: 100%;
+  position: absolute;
+  top: 30%;
   width: 100%;
   text-align: center;
 }
@@ -16,7 +14,6 @@ body {
   font-weight: 500;
   font-family: Ubuntu, sans-serif;
   font-size: 3em;
-  padding-top: 10%;
 }
 
 .comingSoon {
