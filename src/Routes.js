@@ -9,8 +9,14 @@ import Projects from './pages/Projects/Projects';
 import Notes from './pages/Notes/Notes';
 import About from './pages/About/About';
 
+// this is the default behavior
+const getConfirmation = (message, callback) => {
+  const allowTransition = window.confirm(message)
+  callback(allowTransition)
+}
+
 const Routes = () => (
-    <Router>
+    <Router getUserConfirmation={getConfirmation}>
         <div className="appWrapper">
             <Route path="/" component={App} />
             <Route exact path="/" component={MenuContainer} />
