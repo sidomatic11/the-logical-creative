@@ -1,12 +1,12 @@
 {
-  "main.css": "static/css/main.b66cc569.css",
-  "main.css.map": "static/css/main.b66cc569.css.map",
-  "main.js": "static/js/main.35c4a8de.js",
-  "main.js.map": "static/js/main.35c4a8de.js.map",
+  "main.css": "static/css/main.48dadfc7.css",
+  "main.css.map": "static/css/main.48dadfc7.css.map",
+  "main.js": "static/js/main.c53073bf.js",
+  "main.js.map": "static/js/main.c53073bf.js.map",
   "static/media/app_1.png": "static/media/app_1.0d746114.png",
   "static/media/app_2.png": "static/media/app_2.52779f92.png",
   "static/media/app_3.png": "static/media/app_3.6868d7bc.png",
-  "static/media/art_tile.png": "static/media/art_tile.998aab65.png",
+  "static/media/art_tile.png": "static/media/art_tile.ea779729.png",
   "static/media/cred_1.jpg": "static/media/cred_1.a8439ee8.jpg",
   "static/media/cred_2.jpg": "static/media/cred_2.192c7c83.jpg",
   "static/media/cred_3.jpg": "static/media/cred_3.da51a28b.jpg",
@@ -14,6 +14,7 @@
   "static/media/cred_main_poster.jpg": "static/media/cred_main_poster.11fb9e2f.jpg",
   "static/media/cred_online.jpg": "static/media/cred_online.e92c7b11.jpg",
   "static/media/cred_pixweb.jpg": "static/media/cred_pixweb.54f281ff.jpg",
+  "static/media/credenz_tile.png": "static/media/credenz_tile.e5a7ad48.png",
   "static/media/day_1.jpg": "static/media/day_1.857cdd88.jpg",
   "static/media/day_10.jpg": "static/media/day_10.325e5b98.jpg",
   "static/media/day_11.jpg": "static/media/day_11.9f0f0017.jpg",
@@ -44,5 +45,7 @@
   "static/media/day_8.jpg": "static/media/day_8.b3ee68e0.jpg",
   "static/media/day_9.jpg": "static/media/day_9.1d549cb2.jpg",
   "static/media/floating_me.jpg": "static/media/floating_me.c0b27f4b.jpg",
-  "static/media/logo.svg": "static/media/logo.5d5d9eef.svg"
+  "static/media/ieee_connect_tile.png": "static/media/ieee_connect_tile.1dc816d3.png",
+  "static/media/logo.svg": "static/media/logo.5d5d9eef.svg",
+  "static/media/prospectus_thumb.png": "static/media/prospectus_thumb.a45f4860.png"
 }
