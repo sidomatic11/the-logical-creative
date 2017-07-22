@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.882f4427.css",
-  "main.css.map": "static/css/main.882f4427.css.map",
-  "main.js": "static/js/main.d184e4e5.js",
-  "main.js.map": "static/js/main.d184e4e5.js.map",
+  "main.css": "static/css/main.04484f14.css",
+  "main.css.map": "static/css/main.04484f14.css.map",
+  "main.js": "static/js/main.5b90b8ef.js",
+  "main.js.map": "static/js/main.5b90b8ef.js.map",
   "static/media/app_1.png": "static/media/app_1.0d746114.png",
   "static/media/app_2.png": "static/media/app_2.52779f92.png",
   "static/media/app_3.png": "static/media/app_3.6868d7bc.png",
@@ -47,5 +47,9 @@
   "static/media/floating_me.jpg": "static/media/floating_me.c0b27f4b.jpg",
   "static/media/ieee_connect_tile.png": "static/media/ieee_connect_tile.1dc816d3.png",
   "static/media/logo.svg": "static/media/logo.5d5d9eef.svg",
+  "static/media/prospectus_1.png": "static/media/prospectus_1.80aeade9.png",
+  "static/media/prospectus_2.png": "static/media/prospectus_2.566f08a4.png",
+  "static/media/prospectus_3.png": "static/media/prospectus_3.5e9a1d63.png",
+  "static/media/prospectus_4.png": "static/media/prospectus_4.ff5506a8.png",
   "static/media/prospectus_thumb.png": "static/media/prospectus_thumb.a45f4860.png"
 }
