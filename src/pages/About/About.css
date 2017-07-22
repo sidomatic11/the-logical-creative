@@ -1,0 +1,75 @@
+.aboutPage {
+    
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.floatingImage {
+    /*background-image: url("./floating_me.jpg");*/
+    height: 200px;
+    width: 200px;
+    padding: 5px;
+    /*border-radius: 50%;*/
+    background-color: #fff;
+    animation: float 6s ease-in-out infinite;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.floatingImage img {
+    height: 100%;
+    width: 100%;
+}
+
+.description {
+    padding: 30px 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.description .greeting {
+    font-size: 2rem;
+}
+
+.description .primaryDescription {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.description .logical {
+    color: #3C91FF;
+}
+
+.description .creative {
+    color: #FF8C74;
+}
+
+.description .thelogicalcreative {
+    font-weight: 500;
+}
+
+.socialLinksContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.socialLinksContainer div {
+    font-size: 0.6rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    padding: 20px;
+}

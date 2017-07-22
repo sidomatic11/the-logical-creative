@@ -1,7 +1,10 @@
 .App {
-  text-align: center;
-  /*height: 100%;
-  width: 100%;*/
+  /*text-align: center;*/
+  height: 100%;
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+  font-family: Ubuntu, sans-serif;
 }
 
 .App-logo {
@@ -27,62 +30,223 @@
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
+.fullSpread {
+  height: 100%;
+  width: 100%;
+}
+/* 
 .theTitle {
   height: 100px;
   line-height: 100px;
   width: 100%;
-  font-size: 24px;
+  text-align: center;
+  font-size: 2rem;
   font-weight: 500;
   font-family: Ubuntu, sans-serif;
   text-decoration: none;
   color: #000;
+} */
+
+
+
+
+
+
+.titleBar {
+  font-family: Ubuntu, sans-serif;
+  text-decoration: none;
+  color: #000;
+  height: 80px;
+  transition: all .2s;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
+.titleBar .div {
+  transition: all .2s;
+}
+.titleBar .titleLabel {
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0 0 0 20px;
+}
+.titleBar .menuItemContainer {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.titleBar .menuItemContainer .titleMenuItem {
+  font-size: .8rem;
+  letter-spacing: .15rem;
+  margin: 0 30px;
+  text-transform: uppercase;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  color: #000;
+  border-radius: 100px;
+  background-image: none;
+}
+.titleBar .menuItemContainer .titleMenuItem.isActive {
+  color: #fff;
+  background-image: linear-gradient(-145deg, #FF8C74 0%, #3C91FF 100%);
+}
+@media only screen and (max-width: 768px) {
+  .titleBar .menuItemContainer .titleMenuItem {
+    margin: 0 20px;
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    height: 26px;
+    line-height: 26px;
+  }
+}
+.titleBar .dividerBar {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  background-image: linear-gradient(-145deg, #FF8C74 0%, #3C91FF 100%);
+}
+@media only screen and (max-width: 768px) {
+  .titleBar {
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+  }
+  .titleBar .titleLabel {
+    margin: 5px 0 0 0;
+  }
+}
+.titleBar.home {
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titleBar.home .titleLabel {
+  height: auto;
+  line-height: 4.5rem;
+  font-size: 4rem;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .titleBar.home .titleLabel {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+.titleBar.home .menuItemContainer {
+  justify-content: center;
+  margin: 30px 0;
+}
+.titleBar.home .menuItemContainer .titleMenuItem {
+  margin: 0 20px;
+}
+.titleBar.home .dividerBar {
+  height: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .menuContainer {
   width: 100%;
   height: calc(100% - 100px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 0 20px 20px 20px;
 }
 
 .menuItem {
-  padding: 20px;
-  float: left;
+  /*padding: 20px;*/
+  /*float: left;*/
+  cursor: pointer;
+  /*border-radius: 3px;*/
+  /*box-shadow: -1px 1px 6px -1px rgba(0,0,0,.5);*/
+  box-shadow: -1px 1px 0px 2px rgba(0,0,0,.5);  
+  font-family: Ubuntu, sans-serif;
+  color: #000;
+  font-size: 1rem;
 }
 
 .projects {
-  width: 50%;
-  height: 100%;
+  /*width: 50%;*/
+  /*height: 100%;*/
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .notes {
-  height: 50%;
-  width: 50%;
+  /*height: 50%;*/
+  /*width: 50%;*/
 }
 
 .about {
-  height: 50%;
-  width: 50%;
+  /*height: 50%;*/
+  /*width: 50%;*/
 }
 
 .innerBox {
   height: 100%;
   width: 100%;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: .8rem;
+  letter-spacing: .2rem;
+  /*align-items: center;*/
+  /*justify-content: center;*/
 }
 
 .innerBox.projects {
-  background-color: red;
+  /*background-color: red;*/
 }
 
 
 .innerBox.notes {
-  background-color: yellow;
+  /*background-color: yellow;*/
 }
 
 
 .innerBox.about {
-  background-color: blue;
+  /*background-color: blue;*/
 }

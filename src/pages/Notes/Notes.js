@@ -4,11 +4,11 @@ import './Notes.css';
 class Notes extends Component {
 
     render() {
-        let sDisplayMessage = "This is the Notes Page";
+        let sDisplayMessage = "coming soon";
 
         return (
-            <div className="Notes">
-                {sDisplayMessage}
+            <div className="notesPage">
+                <div className="notesPageMessage">{sDisplayMessage}</div>
             </div>
         );
     }
