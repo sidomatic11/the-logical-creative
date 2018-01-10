@@ -9,9 +9,11 @@ class About extends Component {
 
         return (
             <div className="aboutPage">
+
                 <div className="floatingImage">
                     <img src={FloatingMe}/>
                 </div>
+
                 <div className="description">
                     <div className="greeting">Hi! I'm Siddhant Patil.</div>
                     <div className="primaryDescription">I am a full time Software Developer and an aspiring UX Designer from Pune, India.</div>
@@ -23,6 +25,7 @@ class About extends Component {
                     <a href="https://www.behance.net/sidomatic11"><div>behance</div></a>
                     <a href="https://www.linkedin.com/in/patilsiddhant/"><div>linkedin</div></a>
                 </div>
+                
             </div>
         );
     }

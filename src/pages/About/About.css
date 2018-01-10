@@ -18,11 +18,9 @@
 }
 
 .floatingImage {
-    /*background-image: url("./floating_me.jpg");*/
     height: 200px;
     width: 200px;
     padding: 5px;
-    /*border-radius: 50%;*/
     background-color: #fff;
     animation: float 6s ease-in-out infinite;
     overflow: hidden;
@@ -35,13 +33,13 @@
 }
 
 .description {
-    padding: 30px 20px;
+    padding: 20px 20px 30px 20px;
     width: 100%;
     text-align: center;
 }
 
 .description .greeting {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .description .primaryDescription {

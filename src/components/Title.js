@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
 class Title extends Component {
-	render () {
+	render() {
 		return (
 			<div className="theTitle">The Logical Creative</div>
-			);
+		);
 	}
 }
 

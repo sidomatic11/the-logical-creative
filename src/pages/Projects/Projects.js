@@ -7,6 +7,11 @@ import {
 
 
 import ArtTileImage from './../../images/art_tile.png';
+import ProspectusTileImage from './../../images/prospectus_thumb.png';
+import IEEEConnectTileImage from './../../images/ieee_connect_tile.png';
+import CredenzTileImage from './../../images/credenz_tile.png';
+
+
 import ImageDay1 from './../../images/day_1.jpg';
 import ImageDay2 from './../../images/day_2.jpg';
 import ImageDay3 from './../../images/day_3.jpg';
@@ -43,7 +48,10 @@ import ImageApp2 from './../../images/app_2.png';
 import ImageApp3 from './../../images/app_3.png';
 
 
-// import ProspectusPDF from './../../images/prospectus.pdf';
+import ImageProspectus1 from './../../images/prospectus_1.png';
+import ImageProspectus2 from './../../images/prospectus_2.png';
+import ImageProspectus3 from './../../images/prospectus_3.png';
+import ImageProspectus4 from './../../images/prospectus_4.png';
 
 import ImageCredenzLogo1 from './../../images/cred_1.jpg';
 import ImageCredenzLogo2 from './../../images/cred_2.jpg';
@@ -62,48 +70,65 @@ const aProjectData = [
     },
     {
         id: "pictprospectus",
-        name: "PICT Prospectus Design"
+        name: "PICT Prospectus Design",
+        image: ProspectusTileImage
     },
     {
         id: "ieeeconnect",
-        name: "IEEE Connect - App Design"
+        name: "IEEE Connect - App Design",
+        image: IEEEConnectTileImage
     },
     {
         id: "credenz14",
-        name: "Credenz'14 Designs"
-    }
+        name: "Credenz'14 Designs",
+        image: CredenzTileImage
+    }/* ,
+    {
+        id: "ping",
+        name: "P.I.N.G.",
+        image: null
+    } */
 ];
+
+const BackButton = () => (
+    <Link to="/projects" onClick={ () => {window.scrollTo(0, 0);} }>
+        <div className="backButton">back</div>
+    </Link>
+);
 
 const IEEEConnect = () => (
     //todo: use componentdidmount to get dimensions.
     <div className="ieeeConnectPage">
 
-        <div>
-            IEEE Connect was my team's entry for a Mobile Application Design Competition organised by IEEE Region 10 (Asia and Pacific) in October 2015. <br/>
-            The mobile application was intended to provide a platform for student members to interact, exchange ideas and collaborate in a number of activities being planned and executed for the benefit of student members. <br/>
-            There was an ideation phase in which we were supposed to submit our idea of how the application would be. After clearing this round, there was the wireframe development round. <br/>
-            Our design secured the first prize in the competition.<br/>            
-            Below images show the high fidelity wireframe that we created for our design of the application.
+        <div className="ieeeConnectDescription">
+            IEEE Connect was my team's entry for a Mobile Application Design Competition organised by IEEE Region 10 (Asia and Pacific) in October 2015.
+            The mobile application was intended to provide a platform for student members to interact, exchange ideas and collaborate in a number of activities being planned and executed for the benefit of student members. <br />
+            There was an ideation phase in which we were supposed to submit our idea of how the application would be. After clearing this round, there was the wireframe development round. <br />
+            <br />
+            Our design secured the first prize in the competition.<br />
+            <br />
+            Below images show the high fidelity wireframe that we created for our design of the application :
         </div>
 
         <div className="appImagesContainer">
-            <img src={ImageApp1}/>
-            <img src={ImageApp2}/>
-            <img src={ImageApp3}/>
+            <img src={ImageApp1} />
+            <img src={ImageApp2} />
+            <img src={ImageApp3} />
         </div>
 
-        <div>
-            We had to present our wireframe in front of the judges and explain the design of the application. Following is the presentation that we made for the same.
+        <div className="ieeeConnectDescription bottomMargin">
+            We had to present our wireframe in front of the judges and explain the design of the application. Following is the presentation that we made for the same :
+            <br />
         </div>
 
-        <iframe 
-        src="https://docs.google.com/presentation/d/e/2PACX-1vTD-VX2YorHsnygxAwIdh7hIwAQ9i3WOSGQzmZEF-aQQAHiG0fSLkL5fpOZN-7Aw0ioVGfeobIy18fb/embed?start=false&loop=false&delayms=3000" 
-        frameborder="0" 
-        width="100%" 
-        height="400"
-        allowfullscreen="true" 
-        mozallowfullscreen="true" 
-        webkitallowfullscreen="true"></iframe>
+        <iframe
+            src="https://docs.google.com/presentation/d/e/2PACX-1vTD-VX2YorHsnygxAwIdh7hIwAQ9i3WOSGQzmZEF-aQQAHiG0fSLkL5fpOZN-7Aw0ioVGfeobIy18fb/embed?start=false&loop=false&delayms=3000"
+            frameBorder="0"
+            width="100%"
+            height="400"
+            allowFullScreen="true"></iframe>
+
+            <BackButton/>
     </div>
 );
 
@@ -112,7 +137,12 @@ const DaysOfArt = () => (
     <div className="daysOfArt">
 
         <div className="pageHeader">
-            30 days of art
+            30 Days of Art
+        </div>
+
+        <div className="daysOfArtDescription">
+            It had been long since I created some artwork. I wanted to get back in touch and learn watercolor painting.
+            So, I took upon myself this challenge where I produced a piece of art every day for 30 days.
         </div>
 
         <div className="dayArtImage">
@@ -203,61 +233,103 @@ const DaysOfArt = () => (
             <img src={ImageDay30} />
         </div>
 
-        {/* <Link to="/projects">
-            <div className="backButton"></div>
-        </Link> */}
+        <BackButton/>
 
     </div>
 );
 
 
 const ProspectusDesign = () => (
-    <div>
-        I along with my team designed the prospectus of Pune Institute of Computer Technology. <br/>
-        Our goal was to provide an overview of the institute in a more visual way.
+    <div className="prospectusDesignPage">
 
-        {/* <div>
-            <iframe src={ProspectusPDF} width="100%" height="600px"/>
-        </div> */}
+        <div className="prospectusPageHeader">
+            Prospectus Design
+        </div>
+
+        <div className="prospectusDescription">
+        I along with my team designed the prospectus of Pune Institute of Computer Technology.
+        Our goal was to provide an overview of the institute in a more visual way.
+        </div>
+
+        <div className="prospectusImagesContainer">
+            <img src={ImageProspectus1} alt=""/>
+            <img src={ImageProspectus2} alt=""/>
+            <img src={ImageProspectus3} alt=""/>
+            <img src={ImageProspectus4} alt=""/>
+        </div>
+
+        <BackButton/>
+
     </div>
 );
 
 const Credenz = () => (
-    <div>
-        Credenz is the annual technical symposium organised by the PICT IEEE Student Branch.<br/>
-        I was one of the designers for Credenz'14 and following are some of the main designs that I had made.<br/>
-
-        The Credenz'14 logo and its variations : <br/>
-
-        <div>
-            <img src={ImageCredenzLogo1}/>
-            <img src={ImageCredenzLogo2}/>
-            <img src={ImageCredenzLogo3}/>
+    <div className="credenz14page">
+        <div className="credenzDescription">
+            Credenz is the annual technical symposium organised by the PICT IEEE Student Branch.
+        I was one of the designers for Credenz'14 and following are some of the designs that I had made.<br />
+            <br />
+            <br />
+            The Credenz'14 logo and its variations : <br />
         </div>
 
-        The Coming Soon poster : <br/>
+        <div>
+            <img src={ImageCredenzLogo1} />
+            <img src={ImageCredenzLogo2} />
+            <img src={ImageCredenzLogo3} />
+        </div>
+
+        <div className="credenzDescription">
+            <br/>
+            <br/>
+            <br/>
+            The Coming Soon poster : 
+            <br />
+            <br />
+        </div>
 
         <div>
             <img src={ImageCredenzComingSoon} />
         </div>
 
-        The main events poster : <br/>
+        <div className="credenzDescription">
+            <br/>
+            <br/>
+            <br/>
+            The main events poster :
+            <br />
+            <br />
+        </div>
 
         <div>
             <img src={ImageCredenzMainPoster} />
         </div>
 
-        Other event specific posters : <br/>
+        <div className="credenzDescription">
+            <br />
+            <br />
+            <br />
+            Other event specific posters : 
+            <br />
+            <br />
+        </div>
 
         <div>
             <img src={ImageCredenzPixWeb} />
-            <img src={ImageCredenzOnlineEvents} />            
+            <img src={ImageCredenzOnlineEvents} />
         </div>
+
+        <BackButton/>
+
     </div>
 );
 
 
 class ProjectTile extends Component {
+
+    tileClickHandler() {
+        window.scrollTo(0, 0);
+    };
 
     render() {
 
@@ -265,11 +337,11 @@ class ProjectTile extends Component {
 
         return (
             <Link to={"/projects/" + this.props.id}>
-                <div className="projectTile">
+                <div className="projectTile" onClick={this.tileClickHandler}>
                     <div className="projectTileImage">
-                        <img src={oImage}/>
+                        <img src={oImage} />
                     </div>
-                    <div className="projectTileLabel">{this.props.name}</div>                    
+                    <div className="projectTileLabel">{this.props.name}</div>
                 </div>
             </Link>
         );
@@ -300,8 +372,6 @@ class ProjectTileContainer extends Component {
 class Projects extends Component {
 
     render() {
-        let sDisplayMessage = "This is the Projects Page";
-
 
         return (
             <div className="projectsPage">
