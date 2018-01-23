@@ -10,6 +10,7 @@ import ArtTileImage from './../../images/art_tile.png';
 import ProspectusTileImage from './../../images/prospectus_thumb.png';
 import IEEEConnectTileImage from './../../images/ieee_connect_tile.png';
 import CredenzTileImage from './../../images/credenz_tile.png';
+import PingTileImage from './../../images/ping_tile.png';
 
 
 import ImageDay1 from './../../images/day_1.jpg';
@@ -48,10 +49,10 @@ import ImageApp2 from './../../images/app_2.png';
 import ImageApp3 from './../../images/app_3.png';
 
 
-import ImageProspectus1 from './../../images/prospectus_1.png';
-import ImageProspectus2 from './../../images/prospectus_2.png';
-import ImageProspectus3 from './../../images/prospectus_3.png';
-import ImageProspectus4 from './../../images/prospectus_4.png';
+import ImageProspectus1 from './../../images/about-us.jpg';
+import ImageProspectus2 from './../../images/academic-programs.jpg';
+import ImageProspectus3 from './../../images/professional-society-activities.jpg';
+import ImageProspectus4 from './../../images/prospectus-print.jpg';
 
 import ImageCredenzLogo1 from './../../images/cred_1.jpg';
 import ImageCredenzLogo2 from './../../images/cred_2.jpg';
@@ -61,74 +62,202 @@ import ImageCredenzMainPoster from './../../images/cred_main_poster.jpg';
 import ImageCredenzPixWeb from './../../images/cred_pixweb.jpg';
 import ImageCredenzOnlineEvents from './../../images/cred_online.jpg';
 
+import Ping100Front from './../../images/ping_10.0_front.jpg';
+import Ping100Back from './../../images/ping_10.0_back.jpg';
+import Ping100CallForArticles from './../../images/ping_10.0_call_for_articles.jpg';
+import Ping101Front from './../../images/ping_10.1_front.jpg';
+import Ping101Back from './../../images/ping_10.1_back.jpg';
+import Ping101Badge from './../../images/ping_10.1_badge.png';
+
+import ProcessDiagramIeeeConnect from './../../images/process-diagram-ieee-connect.png';
+import MockupsDisplayIeeeConnect from './../../images/mockups-display-ieee-connect.png';
+import IeeeHierarchy from './../../images/ieee-hierarchy.svg';
+
 
 const aProjectData = [
-    {
-        id: "30daysofart",
-        name: "30 Days of Art",
-        image: ArtTileImage
-    },
-    {
-        id: "pictprospectus",
-        name: "PICT Prospectus Design",
-        image: ProspectusTileImage
-    },
     {
         id: "ieeeconnect",
         name: "IEEE Connect - App Design",
         image: IEEEConnectTileImage
     },
     {
+        id: "pictprospectus",
+        name: "PICT Prospectus Design",
+        image: ProspectusTileImage
+    },
+    /*{
         id: "credenz14",
         name: "Credenz'14 Designs",
         image: CredenzTileImage
-    }/* ,
+    }, */
     {
         id: "ping",
         name: "P.I.N.G.",
-        image: null
-    } */
+        image: PingTileImage
+    },
+    {
+        id: "30daysofart",
+        name: "30 Days of Art",
+        image: ArtTileImage
+    }
 ];
 
 const BackButton = () => (
-    <Link to="/projects" onClick={ () => {window.scrollTo(0, 0);} }>
+    <Link to="/projects" onClick={() => { window.scrollTo(0, 0); }}>
         <div className="backButton">back</div>
     </Link>
 );
 
 const IEEEConnect = () => (
     //todo: use componentdidmount to get dimensions.
-    <div className="ieeeConnectPage">
+    <div className="projectPage container">
 
-        <div className="ieeeConnectDescription">
-            IEEE Connect was my team's entry for a Mobile Application Design Competition organised by IEEE Region 10 (Asia and Pacific) in October 2015.
-            The mobile application was intended to provide a platform for student members to interact, exchange ideas and collaborate in a number of activities being planned and executed for the benefit of student members. <br />
-            There was an ideation phase in which we were supposed to submit our idea of how the application would be. After clearing this round, there was the wireframe development round. <br />
+        <div>
+
+            <br/>
+
+            <h1>IEEE Connect</h1>
+            <p> An app that enhances collaboration between IEEE Student members and keeps them updated with the latest happenings. </p>
+
             <br />
-            Our design secured the first prize in the competition.<br />
+
+            <div className="row">
+
+                <div className="col-sm-6 col-md-4">
+                    <h5>Role</h5>
+                    <p>Ideation, Wireframing, Presentation</p>
+                </div>
+
+                <div className="col-sm-6 col-md-4">
+                    <h5>Collaborator</h5>
+                    <p>Akshay Bhole</p>
+                </div>
+
+                <div className="col-sm-12 col-md-4">
+                    <div className="alert alert-info">
+                        <p><b>First Prize</b> at the IEEE Region 10 Mobile Application Design Contest</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr />
+
+            <h5> Problem Statement </h5>
+
+            <p>
+                Design a mobile application that would facilitate easy,
+                approachable and unhindered communication among student members across branches, sections
+                and regions.
+                It is intended to provide a platform to the student members for interaction and
+                collaboration on a wide range of subjects and enhance the reach of information regarding the
+                activities and events being organized for the benefit of student members.
+                The utility of the application can be kept for a Student Branch / Section / Council / Region.
+            </p>
+
+            <hr />
+
+            <h5>The Process</h5>
+            <div className="process-image-container">
+                <img style={{ width: "100%" }} src={ProcessDiagramIeeeConnect} />
+            </div>
+            <div className="row">
+                <p className="col-sm-12 col-md-4">
+                    1 - We gathered detailed information about the hierarchy of IEEE organisation.
+                We ourselves were the end users i.e. the student members. We interviewed our fellow student members for identifying problem areas.
+            </p>
+                <p className="col-sm-12 col-md-3">
+                    2 - On getting a fair idea of what we want the application to do, we designed the system considering all the actors and the different use cases.
+            </p>
+                <p className="col-sm-12 col-md-3">
+                    3 - We planned the screens according to the designed system and prepared the low fidelity wireframes on paper.
+            </p>
+                <p className="col-sm-12 col-md-2">
+                    4 - After the final wireframes were ready, we prepared the high fidelity mock ups which was the expected end result for the competition.
+             </p>
+            </div>
+
+            <h5> Our Solution </h5>
+
+            <div>
+                <img style={{ width: "100%" }} src={MockupsDisplayIeeeConnect} />
+            </div>
+
             <br />
-            Below images show the high fidelity wireframe that we created for our design of the application :
+
+            <h6>Scope</h6>
+            <p>The scope of this application is scalable. It can be implemented for the following levels :
+	Section, Region or International. Restrictions can be imposed based on the requirements and feasibility.</p>
+
+        
+             <br />
+            {/* <h6>Structure</h6>
+            <div className="row">
+                <img className="col-sm-12 col-md-6 img-fluid" src={IeeeHierarchy}/>
+            </div> */}
+
+            <h6>Networking</h6>
+            <p>
+                <b>Discussion boards</b> will facilitate communication between members at various levels. <br/>
+                 <i>Official boards</i> - they can be used for collaboration amongst members
+                at the respective levels. There can also be other official boards to address issues faced by
+                members and providing them with required guidance and help. <br/>
+                 <i>Unofficial boards</i> - any member can freely start a
+                discussion and interested members can join in. These boards can be used for discussion of new
+                ideas. <br/>
+                 <b>Member profiles</b> will consist of details like the member’s general
+                information, designation, skills, achievements and volunteering experience. Using this information,
+                 others can have a clear idea about whom to contact for any particular assistance. <br/>
+                 <b>Polls</b> can be used for validation of ideas and
+                taking important decisions.
+            </p>
+
+            <br />
+            
+
+            <h6>Volunteer Resources</h6>
+            <p>
+            An event can be created by the event coordinator and its scope for volunteering can be
+            specified by the coordinator. The event page will consist of the various tasks for which members
+            can volunteer. The coordinator can issue a call for volunteering which will be conveyed to the
+            members via notifications. The member can choose to accept the invitation and can volunteer for a
+            particular task. On successful completion of the task, it will be added to the member’s profile.
+            </p>
+
+            <br />
+
+            <h6>Official Information</h6>
+            <p>
+            The moderators of a specific branch/section/region can send information to their members
+via notifications. The app will consist of a news feed section from where the members will get
+information about various events, activities and happenings at all levels. The official IEEE
+deadlines will be available for the members to view and will be timely notified to them through the
+notifications.
+            </p>
+
+            <br />
+
+            <h6>Additional Information</h6>
+            <p>
+            The app will consist of an IEEE Calendar. This calendar will consist of the official IEEE
+deadlines as mentioned above. It can contain the dates of local activities related to the member as
+well as those added by the members themselves.
+            </p> 
+
+            <br />
+
+            <h5>The final presentation</h5>
+            <iframe
+                src="https://docs.google.com/presentation/d/e/2PACX-1vTD-VX2YorHsnygxAwIdh7hIwAQ9i3WOSGQzmZEF-aQQAHiG0fSLkL5fpOZN-7Aw0ioVGfeobIy18fb/embed?start=false&loop=false&delayms=3000"
+                frameBorder="0"
+                width="100%"
+                height="400"
+                allowFullScreen="true"></iframe>
+
         </div>
 
-        <div className="appImagesContainer">
-            <img src={ImageApp1} />
-            <img src={ImageApp2} />
-            <img src={ImageApp3} />
-        </div>
+        <BackButton />
 
-        <div className="ieeeConnectDescription bottomMargin">
-            We had to present our wireframe in front of the judges and explain the design of the application. Following is the presentation that we made for the same :
-            <br />
-        </div>
-
-        <iframe
-            src="https://docs.google.com/presentation/d/e/2PACX-1vTD-VX2YorHsnygxAwIdh7hIwAQ9i3WOSGQzmZEF-aQQAHiG0fSLkL5fpOZN-7Aw0ioVGfeobIy18fb/embed?start=false&loop=false&delayms=3000"
-            frameBorder="0"
-            width="100%"
-            height="400"
-            allowFullScreen="true"></iframe>
-
-            <BackButton/>
     </div>
 );
 
@@ -233,41 +362,85 @@ const DaysOfArt = () => (
             <img src={ImageDay30} />
         </div>
 
-        <BackButton/>
+        <BackButton />
 
     </div>
 );
 
 
 const ProspectusDesign = () => (
-    <div className="prospectusDesignPage">
+    <div className="projectPage container">
 
-        <div className="prospectusPageHeader">
-            Prospectus Design
+        <div>
+
+            <br/>
+
+            <h1>P.I.C.T. Prospectus</h1>
+            <p> The official prospectus of Pune Institute of Computer Technology. </p>
+
+            <br />
+
+            <div className="row">
+
+                <div className="col-sm-6">
+                    <h5>Role</h5>
+                    <p>Design, Communication with stakeholders, Team management</p>
+                </div>
+
+                <div className="col-sm-6">
+                    <h5>Collaborators</h5>
+                    <p>Akshay Agrawal, Shriya Hardikar, Akriti Goyal</p>
+                </div>
+
+            </div>
+
+            <br />
+
+            <h5>Challenges</h5>
+            <ul>
+                <li>Organise information about all facets of PICT in a few pages</li>
+                <li>Collection and capturing of relevant imagery</li>
+                <li>Consistent yet variety of layouts</li>
+            </ul>
+
+            <br />
+
+            <div className="row">
+                <div className="col-md-4">
+                    <img className="img-fluid" src={ImageProspectus1}/>
+                </div>
+                <div className="col-md-4">
+                    <img  className="img-fluid" src={ImageProspectus2}/>
+                </div>
+                <div className="col-md-4">
+                    <img  className="img-fluid" src={ImageProspectus3}/>
+                </div>
+            </div>
+
+            <br/>
+
+            <div className="row">
+                <div className="col-md-12">
+                    <img className="img-fluid" src={ImageProspectus4}/>
+                </div>
+            </div>
+
+
         </div>
 
-        <div className="prospectusDescription">
-        I along with my team designed the prospectus of Pune Institute of Computer Technology.
-        Our goal was to provide an overview of the institute in a more visual way.
-        </div>
-
-        <div className="prospectusImagesContainer">
-            <img src={ImageProspectus1} alt=""/>
-            <img src={ImageProspectus2} alt=""/>
-            <img src={ImageProspectus3} alt=""/>
-            <img src={ImageProspectus4} alt=""/>
-        </div>
-
-        <BackButton/>
+        <BackButton />
 
     </div>
 );
 
 const Credenz = () => (
     <div className="credenz14page">
+        <div className="projectTitle">Credenz '14 </div>
+        <div className="projectDescription">Credenz is an annual technical symposium organised by the PICT IEEE Student Branch. Designs for this event range from promotional material, merchandise, UI for website and mobile application and the decoration of the campus.</div>
+        <br />
+        <br />
         <div className="credenzDescription">
-            Credenz is the annual technical symposium organised by the PICT IEEE Student Branch.
-        I was one of the designers for Credenz'14 and following are some of the designs that I had made.<br />
+            I was one of the senior designers for Credenz'14 and following are some of the designs that I had made.<br />
             <br />
             <br />
             The Credenz'14 logo and its variations : <br />
@@ -280,10 +453,10 @@ const Credenz = () => (
         </div>
 
         <div className="credenzDescription">
-            <br/>
-            <br/>
-            <br/>
-            The Coming Soon poster : 
+            <br />
+            <br />
+            <br />
+            The Coming Soon poster :
             <br />
             <br />
         </div>
@@ -293,9 +466,9 @@ const Credenz = () => (
         </div>
 
         <div className="credenzDescription">
-            <br/>
-            <br/>
-            <br/>
+            <br />
+            <br />
+            <br />
             The main events poster :
             <br />
             <br />
@@ -309,7 +482,7 @@ const Credenz = () => (
             <br />
             <br />
             <br />
-            Other event specific posters : 
+            Other event specific posters :
             <br />
             <br />
         </div>
@@ -319,8 +492,38 @@ const Credenz = () => (
             <img src={ImageCredenzOnlineEvents} />
         </div>
 
-        <BackButton/>
+        <BackButton />
 
+    </div>
+);
+
+const PING = () => (
+    <div className="pingPage">
+        <div className="projectTitle">PICT IEEE Newsletter Group <a target="_blank" href="https://issuu.com/p.i.n.g.">(P.I.N.G.)</a></div>
+        <div className="projectDescription">P.I.N.G. is the official biannual newsletter of the PICT IEEE Student Branch. The aim of this newsletter is to provide important technical knowledge regarding latest trends and breakthroughs in technology. A testament to the marvel of technical literature, P.I.N.G. encompasses articles from Industry professionals, acclaimed academicians and students from various fields of study.</div>
+        <br />
+        <br />
+        <div>
+            <div className="projectSubTitle">P.I.N.G Issue 10.0</div>
+            <div className="projectDescription">Designed the front and back cover of the magazine and a promotional poster.</div>
+            <div className="pingImageWrapper">
+                <img src={Ping100Front} />
+                <img src={Ping100Back} />
+                <img src={Ping100CallForArticles} />
+            </div>
+        </div>
+        <br />
+        <div>
+            <div className="projectSubTitle">P.I.N.G Issue 10.1</div>
+            <div className="projectDescription">Responsible for the design of the magazine’s front and back covers, the internal layout and the badge which is awarded to the authors of the articles featured in the magazine.</div>
+            <div className="pingImageWrapper">
+                <img src={Ping101Front} />
+                <img src={Ping101Badge} className="ping-badge"/>
+                <img src={Ping101Back} />
+            </div>
+        </div>
+
+        <BackButton />
     </div>
 );
 
@@ -376,10 +579,11 @@ class Projects extends Component {
         return (
             <div className="projectsPage">
                 <Route exact path="/projects" component={ProjectTileContainer} />
-                <Route path="/projects/30daysofart" component={DaysOfArt} />
                 <Route path="/projects/ieeeconnect" component={IEEEConnect} />
                 <Route path="/projects/pictprospectus" component={ProspectusDesign} />
                 <Route path="/projects/credenz14" component={Credenz} />
+                <Route path="/projects/ping" component={PING} />
+                <Route path="/projects/30daysofart" component={DaysOfArt} />
             </div>
         );
     }

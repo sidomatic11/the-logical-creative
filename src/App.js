@@ -43,7 +43,7 @@ class App extends Component {
 
             <div className="menuItemContainer">
               <Link to="/projects">
-                <div className={sProjectsMenuItemClass}> Projects </div>
+                <div className={sProjectsMenuItemClass}> Portfolio </div>
               </Link>
               <Link to="/notes">
                 <div className={sNotesMenuItemClass}> Notes </div>

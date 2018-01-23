@@ -101,19 +101,10 @@
 
 
 
-.ieeeConnectPage {
+.projectPage {
     height: auto;
     width: 100%;
     text-align: left;
-}
-
-.ieeeConnectPage .ieeeConnectDescription {
-    margin: 0 5%;
-    color: #666;
-}
-
-.ieeeConnectPage .bottomMargin {
-    margin-bottom: 20px;
 }
 
 .appImagesContainer {
@@ -133,6 +124,7 @@
     height: auto;
     width: 100%;
     text-align: center;
+    padding: 0 20px;
 }
 
 .credenz14page img {
@@ -196,4 +188,67 @@
     letter-spacing: .1rem;
     text-transform: uppercase;
     text-align: center;
+}
+
+.projectTitle {
+    width: 100%;
+    text-align: left;
+    /* padding: 20px; */
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.projectTitle a {
+    border-bottom: 2px #61a6ff dotted;
+}
+
+.projectSubTitle {
+    width: 100%;
+    text-align: left;
+    /* padding: 10px 20px; */
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-bottom: 10px;    
+}
+  
+
+.projectDescription {
+    width: 100%;
+    /* padding: 10px 20px; */
+    text-align: left;
+}
+
+.pingPage {
+    padding: 0 20px;
+}
+
+.pingImageWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: wrap;
+    margin: 20px 0;
+}
+
+.pingImageWrapper img {
+    flex: 0 0 300px;
+    max-width: 300px;
+    box-shadow: 0 1px 4px #aaa;    
+}
+
+.ping-badge {
+    border-radius: 50%;
+}
+
+.process-image-container {
+    padding: 20px 0 40px 0;
+}
+
+.specialInformationContainer {
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid green;
+    background: lightgreen;
+    color: green;
 }
