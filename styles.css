@@ -1,0 +1,31 @@
+body {
+  width: 1024px;
+  margin: auto;
+}
+
+nav {
+  padding: 20px 0 20px 0;
+  display: flex;
+  box-shadow: 0 1px 0px 0px black;
+}
+
+.navItem {
+
+}
+
+.navItem.logo {
+  flex: 1 0;
+}
+
+.navItem.right {
+  padding-left: 20px;
+}
+
+main {
+  padding: 20px 0 0 0;
+}
+
+.content {
+  max-width: 32em;
+  margin: auto;
+}
